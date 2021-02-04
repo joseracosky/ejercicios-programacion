@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculadora</title>
+	<script type="text/javascript">
+		
+		var num1= prompt("introduce un numero")*1;
+		alert(typeof(num1));
+		var num2= prompt("introduece un numero entero");
+		var num3= prompt("introduce otro numero entero");
+		if ( !isNaN(num2) && !isNaN(num3)){
+
+
+		var operacion= prompt("que operacion deseas realizar suma o resta?");
+		if (operacion == "suma"){
+			alert(parseInt(num2)+parseInt(num3));
+		}
+
+		else if(operacion == "resta"){
+			alert(parseInt(num2)-parseInt(num3));
+
+		}
+
+		else{
+			alert("solo se admite suma o resta")
+		}
+		}
+		else{
+			alert("solo puedes ingresar numeros")
+		}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

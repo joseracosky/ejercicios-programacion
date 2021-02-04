@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script type="text/javascript">
+        // aqui sacamos los valore consecutivos y los valores comcecutivos mayores
+    var array = [50, 47, 20, 5, 7, 8, 3, 4, 6, 54, 33, 29, 30, 2, 4, 5, 6, 7, 8, ];
+    var contador = 0;
+    var cons = []
+
+    for (let valor of array) {
+        contador++;
+        if (valor + 1 == array[contador]) {
+            cons.push(valor, array[contador]);
+            document.write(cons + "<br/>");
+
+        }
+    }
+    var contador2 = 0;
+    var cons2 = []
+
+    for (let valor of cons) {
+        contador2++;
+        cons2.push(valor);
+        if (valor == cons[contador2]) {
+            cons2.pop(valor)
+        }
+
+        document.write(cons2 + "<br/>")
+
+    }
+    alert("los numeros consecutivos de del array son: " + cons2)
+
+    var contador3 = -2;
+    var contador4 = 0;
+    var mayor = []
+    cons2.push("a")
+    for (let valor of cons2) {
+        contador3++;
+        contador4++;
+
+
+
+        if (valor - 1 == cons2[contador3] && (valor + 1 > cons2[contador4] || valor + 1 < cons2[contador4] || isNaN(cons2[contador4]))) {
+            mayor.push(valor)
+        }
+    }
+
+    alert("los valores conseccutivos mayores son: " + mayor)
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

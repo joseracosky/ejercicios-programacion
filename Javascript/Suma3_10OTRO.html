@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script type="text/javascript">
+    // este bule suma los primeros tres valores entre 100 y 8000, saltea diez y repite la operacion
+    var num1 = 100;
+    var num2 = 8000;
+    var contador = 0;
+
+    for (i = 0; i <= 7900; i++) {
+        if (contador == 13) {
+            contador = 0
+        } else if (contador < 3) {
+            num1 = (num1 + i)
+        }
+
+        contador++
+
+    }
+    alert(num1)
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

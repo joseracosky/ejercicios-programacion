@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>practicamos dom</h1>
+	<div id="subtitulo"></div>
+	<ul>
+		<li id="primero">uno</li>
+		<li>dos</li>
+		<li>tres</li>
+		<li>cuatro</li>
+	</ul>
+	<button id="boton">BOTON</button>
+	<input type="text" id="input">
+	<script type="text/javascript">
+		var elemento = document.createElement("h2");
+		var contenido = document.createTextNode("este es nuestro titulo");
+		elemento.appendChild(contenido);
+		elemento.setAttribute("align", "center");
+		document.getElementById("subtitulo").appendChild(elemento);
+		var primer_elemento = document.getElementById("primero");
+		// con innerHTML podemos agregar etiquetas, con textContent solo agregamos texto.
+		primer_elemento.innerHTML = "cambiamos contenido <i> agregamos etiquetas <i>";
+		// parentNode es para acceder al elemento padre
+		var padre = document.getElementsByTagName("li")[0].parentNode;
+		// aqui accedemos a el segundo elemento de la lista "li".
+		var referencia = document.getElementsByTagName("li")[1];
+		var nuevotexto = document.createTextNode("cambiamos otro contenido");
+		// aqui pide dos parametros, en el primero el elemento que quermos agregar y el segudo el que quremos reemplazar.		
+		padre.replaceChild(nuevotexto,referencia);
+		// aca borramos el ultimo elememto	
+		var referencia2 = document.getElementsByTagName("li")[2];
+		padre.removeChild(referencia2);
+		
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+		(function(){
+			var boton = document.getElementById("boton");
+			var funciona = function(){
+				alert("funcionaaaa!!!")
+			};
+			// en la linea de abajo el primer parametro es para el evento y el segundo para lo que queremos ejecutar.
+			boton.addEventListener("click", function(){
+				alert("funciono")
+			})
+			boton.addEventListener("click", funciona)
+		}())
+		
+
+
+
+
+
+	</script>
+</body>
+</html>

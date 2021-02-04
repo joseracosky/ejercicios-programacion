@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+<script type="text/javascript">
+// este objeto representa a una persona
+var persona = {
+    nombre: "pepe",
+    apellido: "pipo",
+    edad: 39,
+    ocupacion: "comerciante",
+    estado_civil: "casado",
+    nacionalidad: "cubano",
+    direccion: {
+        calle: "tito",
+        barrio: "chachi",
+        localidad: "totoral",
+
+
+    }
+}
+var array1 = [];
+var array2 = [];
+// este bucle pasa las propieades a el array1 y los valors a el array2
+for (let i in persona) {
+    array1.push(i);
+    array2.push(persona[i]);
+
+}
+document.write(array1 + "<br/>");
+document.write(array2 + "<br/>");
+
+// en estas lineas determinamos cuantos elementos contiene el objeto persona
+
+var contador1 = array1.length * 1;
+var contador2 = array2.length * 1;
+alert("el objeto persona contiene " + (contador1 + contador2) + " elementos");
+
+// aqui hacemos un objeto con la tabla del 3 usando un bucle for
+
+var tabla3 = {};
+var resultado = 0;
+for (i = 1; i <= 10; i++) {
+    resultado = 3 * i;
+    let mult = "3x" + i
+    tabla3[mult] = resultado;
+
+}
+console.log(tabla3);
+
+// aqui pasamos las posiciones del array a las propiedades del objeto
+// y los valores del array a los valores del objeto
+
+var array_a = ["a", "b", "c", "d", "e", "f", "g"];
+var objeto_a = {};
+var pocision = -1;
+for (let valor of array_a) {
+    pocision++;
+    objeto_a[pocision] = valor;
+}
+console.log(objeto_a);
+</script>
+
+<body>
+</body>
+
+</html>

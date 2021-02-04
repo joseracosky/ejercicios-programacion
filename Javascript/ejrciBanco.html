@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+	 
+    <h1 style="text-align: center;  ">HOME BANKING</h1>
+    <h2 id="iddinero"></h2>
+    <h2 id="idmovimientos"></h2>
+    <button onclick="extraer()">extraer</button>
+    <button onclick="depositar()">depositar</button>
+    <button onclick="transferir()">transferir</button>
+    <h2>pagar servicios </h2>
+    <button onclick="luz()">pagar luz: $500</button>
+    <button onclick="gas()">pagar gas: $300</button>
+    <button onclick="rentas()">pagar rentas: $1000</button>
+</body>
+<script type="text/javascript">
+// simulamos un home banking
+var dinero = 50000;
+var movimientos = [];
+// esta funcion se encarga de la parte grafica
+function dibujarHomeBanking(movimientos, dinero) {
+    idmovimientos.innerHTML = "movimientos = [ <br> " + arrToString(movimientos) + "]";
+    iddinero.innerText = "Monto total $" + dinero ;
+}
+// estas tres funciones ejecutan las operaciones: extraer, depositar y transferir
+function extraer() {
+    let montoAExtraer = prompt("ingrese monto a extraer") * 1;
+    if (montoAExtraer < dinero) {
+        dinero = dinero - montoAExtraer;
+        movimientos.push({ operacion: "extraer", monto: montoAExtraer });
+
+    } else { alert("monto incorrecto") }
+
+    dibujarHomeBanking(movimientos, dinero)
+}
+function depositar(){
+	montoADepositar = prompt("ingrese monto a depositar")*1;
+	if (montoADepositar > 1){
+		dinero = dinero + montoADepositar;
+		movimientos.push({operacion: "depositar", monto: montoADepositar});
+	} else {alert ("monto incorrecto")}
+	dibujarHomeBanking(movimientos, dinero);
+}
+function transferir(){
+	persona = prompt("ingrese el nombre del destinatario");
+	montoATransferir = prompt("ingrese monto a transferir")*1;
+
+	if (montoATransferir > 1 && montoATransferir < dinero){
+		dinero = dinero - montoATransferir;
+		movimientos.push({operacion: "tranferir", monto: montoATransferir, destinatario: persona})
+	} else {alert("monto incorrecto")}
+
+
+	dibujarHomeBanking(movimientos, dinero);
+
+}
+function luz(){
+	if (dinero > 500){
+		dinero = dinero - 500;
+		movimientos.push({operacion: "pagar luz", monto: 500})
+	} else {alert("dinero insuficiente")}
+	dibujarHomeBanking(movimientos, dinero);
+}
+function gas(){
+	if (dinero > 300){
+		dinero = dinero - 300;
+		movimientos.push({operacion: "pagar gas", monto: 300})
+	} else {alert("dinero insuficiente")}
+	dibujarHomeBanking(movimientos, dinero);
+}
+function rentas(){
+	if (dinero > 1000){
+		dinero = dinero - 1000;
+		movimientos.push({operacion: "pagar rentas", monto: 1000})
+	} else {alert("dinero insuficiente")}
+	dibujarHomeBanking(movimientos, dinero);
+}
+function objectoToString(objeto){
+    var str='';
+
+    for(p in objeto){
+    	console.log(typeof p)
+        str = str +"{"+ p+': '+objeto[p] + "} ";
+
+    }
+    return str = str + "<br>";
+}
+function arrToString(arr){
+    var str = '';
+    for(let objeto of arr){
+        str = str + objectoToString(objeto);
+    }
+    return str;
+}
+
+
+dibujarHomeBanking(movimientos, dinero);
+</script>
+
+</html>

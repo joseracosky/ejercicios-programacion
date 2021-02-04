@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!---------------------------mi estilo--------------------------------------->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title>Ejercicio bootstrap</title>
+    <!-------------------google fonts------------------------------>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-------------------barra de navegacion---------------------------------->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="somos.html">Somos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            servicios
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">servicios 01</a>
+                            <a class="dropdown-item" href="#">servicios 02</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">servicios 03</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">sucursales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">contacto</a>
+                    </li>
+                    <li>
+                        <img class="redes" src="img/facebook.png">
+                        <img class="redes" src="img/instagram.png">
+                        <img class="redes" src="img/twitter.png">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--fin del container-->
+    </nav>
+
+    <!----------------------------fin del nav----------------------------------->
+
+    <!-----------------------------deslisador----------------------------------->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/carousel1.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>primer titulo</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <a class="btn btn-light" href="#">descargar</a>
+                    <a class="btn btn-light" href="#">mas info</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousel2.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Segundo titulo</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousel3.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Tercer titulo</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!--------------------------fin de deslisador--------------------------------->
+
+    <!--------------------------main---------------------------------------------->
+
+    <main>
+
+        <<!-----------------------banner 1------------------------------------->
+
+        <section class="altura-a-b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-4 text-center banner">
+                        <img class="img-fluid w-100" src="img/banner1.jpeg">
+                        <h5>titulo 1</h5>
+                        <p>Lorem ipsum dolor sit</p>
+                    </div>
+                    <div class="col-12 col-sm-4 text-center banner">
+                        <img class="img-fluid w-100" src="img/banner2.jpeg">
+                        <h5>titulo 2</h5>
+                        <p>Lorem ipsum dolor sit</p>
+                    </div>
+                    <div class="col-12 col-sm-4 text-center banner">
+                        <img class="img-fluid w-100" src="img/banner3.jpeg">
+                        <h5>titulo 3</h5>
+                        <p>Lorem ipsum dolor sit</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---------------------------fin banner 1----------------------------->
+
+        <!---------------------------video------------------------------------>
+
+        <section class="video altura-a-b">
+            <a href="#">
+                <img src="img/play.png" alt="play">
+            </a>
+        </section>
+
+        <!--------------------fin video--------------------------------------->
+
+        <!------------------------------banner 2-------------------------------->
+
+        <section class="altura-a-b text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <img src="img/pantalla.jpeg" class="img-fluid w-100" alt="pamtalla 1">
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <img src="img/pantalla.jpeg" class="img-fluid w-100" alt="pamtalla 2">
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <img src="img/pantalla.jpeg" class="img-fluid w-100" alt="pamtalla 3">
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <img src="img/pantalla.jpeg" class="img-fluid w-100" alt="pamtalla 4">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----------------------------------fin banner 2------------------------------>
+
+        <!------------------------------descarga--------------------------------->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <img src="img/banner1.jpeg" alt="pantalla" class="img-fluid">    
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <h2>descarga tu app</h2>
+                        <p>jjs jjjs kchjs kjcjks kckks kx
+                        jxjsks kxksk kjbowoj oi osknl lkznlnz
+                        nxlcnkxcnkxzcnlxc</p>
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <img src="img/googleplay.jpeg" class="img-fluid">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <img src="img/appstore.png" class="img-fluid">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------------------------------fin descarga---------------------------->
+        </main>
+        <!-------------------------------footer------------------------------------>
+
+        <footer>
+            <img src="img/logo.png" class="logo-footer">
+            <br>
+            <img class="redes" src="img/facebook.png">
+            <img class="redes" src="img/instagram.png">
+            <img class="redes" src="img/twitter.png">
+            <p>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore<br> et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
+        </footer>
+
+
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

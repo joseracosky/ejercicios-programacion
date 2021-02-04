@@ -1,0 +1,37 @@
+@font-face{
+	font-family: jose;
+	src: url(fuente1.otf) 
+}
+.hola{
+	font-family: jose;
+}
+.cuadrado{
+	width: 200px;
+	height: 200px;
+	background-color: #721b65;
+	border-radius: 10%; 
+}
+.rectangulo{
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	float: right;
+}
+@media screen and (max-width: 700px){
+	.rectangulo{
+		background-color: red;
+		
+	}
+
+}
+@media screen and (max-width: 300px){
+	.rectangulo{
+		background-color: orange;
+		
+	}
+}
+.rectangulo:hover{
+	background-color: green;
+	cursor: pointer;
+	
+}

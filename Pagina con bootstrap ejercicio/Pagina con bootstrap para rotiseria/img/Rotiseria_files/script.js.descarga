@@ -1,0 +1,32 @@
+var contenedor = document.getElementById("contenedor");
+var array = [];
+
+function mostrarPedidos() {
+    for (i = 0; i < array.length; i++) {
+        var paquete = document.createElement("div");
+        paquete.classList.add("card-box");
+        for (j = 0; j < array[i].length; j++) {
+            var comida = document.createElement("p");
+            comida.classList.add("card-title");
+            comida.innerHTML = array[i][j];
+            paquete.appendChild(comida);
+        }
+        contenedor.appendChild(paquete);
+    }
+}
+
+function guardarPedidos() {
+
+    var nombrev = nombre.value;
+    var telefonov = telefono.value;
+    var direccionv = direccion.value;
+    var comidav = comida.value;
+    var arrayInterno = [];
+    arrayInterno.push(nombrev);
+    arrayInterno.push(telefonov);
+    arrayInterno.push(direccionv);
+    arrayInterno.push(comidav);
+    array.push(arrayInterno);
+
+
+}

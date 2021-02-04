@@ -1,0 +1,17 @@
+.paquete {
+	width: 150px;
+	height: 150px;
+	border: 2.5px solid black;
+	display: inline-table;
+	margin: 10px;
+
+}
+.comida {
+	font-size: 12px;
+	text-align: center;
+}
+.cliente {
+	font-size: 14;
+	margin-left: 10px;
+
+}

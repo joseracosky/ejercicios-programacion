@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script type="text/javascript">
+    // esta funcion suma los numeros de un array entre 15 y 45 por un lado y los demas por otro	
+    function sum15a45(array) {
+
+        var sumar15a45 = 0;
+        var sumarotros = 0;
+        for (valor of array) {
+            if (valor >= 15 && valor <= 45) {
+                sumar15a45 = valor + sumar15a45;
+
+
+            } else {
+                sumarotros = valor + sumarotros;
+
+
+            }
+        }
+        return alert(sumar15a45), alert(sumarotros)
+
+    }
+    var array_a = [47, 15, 20, 5, 7, 8, 3, 4, 6, 54, 33, 29, 30, 2, 4, 5, 6, 7, 8];
+    sum15a45(array_a);
+    // esta funcion calcula la edad de una persona
+    function calc_edad() {
+        var anio = prompt("intrduce el año en el que naciste") * 1;
+
+        while (anio > 2020 || anio < 1900 || isNaN(anio)) {
+            anio = prompt("introduce un año valido")
+        }
+
+        var mes = prompt("introduce el mes, en numeros, de tu nacimiento") * 1;
+
+        while (mes > 12 || mes < 1 || isNaN(mes)) {
+            mes = prompt("introduce un mes valido")
+        }
+
+        var dia = prompt("introduce el dia de tu nacimiento en numeros") * 1;
+
+        while (dia > 31 || dia < 1 || isNaN(dia)) {
+            dia = prompt("introduce un dia valido")
+        }
+
+        var edad = 2020 - anio;
+
+        if (mes <= 3 && dia <= 10) {
+            edad - 1;
+        }
+
+        return alert("tu tienes " + edad + " años")
+
+    }
+    calc_edad()
+
+    // esta funcion suma las tres primeras sifras entre dos valores y saltea diez y luego repite
+
+    function sum3salt10(a, b) {
+        if (a > b) {
+            let aux = a;
+            a = b;
+            b = aux;
+        }
+
+        var contador = 0;
+
+        for (i = 0; i <= (b - a); i++) {
+            if (contador == 13) {
+                contador = 0
+            } else if (contador < 3) {
+                a = (a + i)
+            }
+
+            contador++
+
+        }
+        return alert(a)
+    }
+    sum3salt10(25, 0);
+
+
+
+
+    // esta funcion determina cual es el valor mayor del array
+
+    function valor_mayor(array) {
+       var mayor = 0;
+
+        for (let valor of array) {
+            if (valor > mayor) {
+                mayor = valor;
+            }
+        }
+        return alert(mayor);
+    }
+    var arrayb = [50, 47, 20, 5, 7, 8, 3, 4, 6, 54, 33, 29, 30, 2, 4, 5, 6, 7, 8, ];
+    valor_mayor(arrayb);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

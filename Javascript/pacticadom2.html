@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+	<h1 id="titulo"></h1>
+	<button id="boton">agregar</button>
+	<button id="boton2">borrar</button>
+
+
+</body>
+<script type="text/javascript">
+	var prin = document.createTextNode("[");
+	var uno = document.createTextNode("1,");
+	var dos = document.createTextNode("2,");
+	var tres = document.createTextNode("3,");
+	var cuatro = document.createTextNode("4");
+	var fin = document.createTextNode("]");
+	var array = document.getElementById("titulo");
+	array.setAttribute("align", "center");
+	array.appendChild(prin);
+	array.appendChild(uno);
+	array.appendChild(dos);
+	array.appendChild(tres);
+	array.appendChild(cuatro);
+	array.appendChild(fin);
+	var padre = document.getElementsByTagName('h1')[0].parentNode
+	
+	var boton = document.getElementById("boton");
+	var boton2 = document.getElementById("boton2");
+	boton.addEventListener("click", function(){
+		var nuevoelemento = document.createTextNode(prompt("agrega un elemento"));
+
+		array.appendChild(nuevoelemento);
+
+	})
+	
+
+</script>
+</html>

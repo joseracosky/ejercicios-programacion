@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <h1>
+        <b>[</b>
+        <b>1,</b>
+        <b>2,</b>
+        <b>3,</b>
+        <b>4</b>
+        <b id="corchete">]</b>
+    </h1>
+    <button id="boton">agregar</button>
+    <button id="boton2">borrar</button>
+</body>
+<script type="text/javascript">
+
+var padre = document.getElementsByTagName('b')[0].parentNode;
+var boton = document.getElementById("boton");
+var boton2 = document.getElementById("boton2");
+var corchete = document.getElementById("corchete");
+boton.addEventListener("click", function() {
+    padre.removeChild(corchete);
+    var agregar = document.createElement("b");
+    var coma = document.createTextNode(", ");
+    agregar.appendChild(coma);
+    padre.appendChild(agregar);
+    var elemento = document.createElement("b");
+    var contenido = document.createTextNode(prompt("agrega un elemento"));
+    elemento.appendChild(contenido);
+    padre.appendChild(elemento);
+    padre.appendChild(corchete);
+
+});
+alert(array.length)
+
+
+</script>
+
+</html>

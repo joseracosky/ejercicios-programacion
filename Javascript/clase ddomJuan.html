@@ -1,0 +1,91 @@
+
+
+<h1 id="arrayGrafico"></h1>
+<button onclick='ingreseValorArray()'>INGRESAR</button>
+<button onclick='eliminarValorArray()'>ELIMINAR</button>
+<script>
+// funcional
+
+var A = [50,11,2,5];
+
+// se comunica con el dom a partir de un estado
+function dibujarDom(arr){
+	var str = '', pos, valor;
+	for(pos in arr){ // pos=0,1,2,3
+
+		valor = arr[pos]; //valor=50,11,2,5
+		//str = str + pos + ':' + valor; // 0:50,1:11,...
+		if(pos%2==0)
+			str += `<font style="color:red">${pos}:${valor}</font>`;
+		else
+			str += `${pos}:${valor}`;
+		if(pos!=arr.length-1){
+			str += '|'; // str = str + '|'
+		}
+	}
+	arrayGrafico.innerHTML = '['+str+']';
+	//arrayGrafico.innerHTML = '['+arr.toString()+']';
+}
+
+function ingreseValorArray(){
+	var valor = prompt('Ingrese un valor');
+	A.push(valor);
+	dibujarDom(A);
+}
+
+function eliminarValorArray(){
+	/*var pos = prompt('Ingrese una posicion')*1;
+	if(Number.isInteger(pos)){
+		A.splice(pos,1);
+		dibujarDom(A);
+	}*/
+	A.pop();
+	dibujarDom(A);
+}
+
+dibujarDom(A);
+
+</script>
+
+<BR><BR>
+
+Ejercicio BANCO
+
+<h1 id="idDinero"></h1>
+<h1 id="idMovimientos"></h1>
+
+<script>
+
+dinero = 3000;
+movimientos = [/*{operacion:"extraer",monto:300,...}*/];
+
+function dibujarHomeBanking(movimientos,dinero){
+	idMovimientos.innerHTML = 'Movimientos = ['+movimientos.toString()+']';
+	idDinero.innerText = '$'+dinero;
+}
+
+function extraer(){
+	// ingrese cuanto dinero va a retirar
+	montoAExtraer = prompt()
+
+	/*if(es valido retirar ese dinero){
+		dinero = dinero - montoAExtraer; 
+		movimientos.push({operacion:"extraer",monto:montoAExtraer})
+	}else{
+		alert('no cuenta con dinero suficiente')
+	}*/
+
+}
+
+function depositar(){}
+
+function tranferir(){
+	// pedir un nombre
+	// monto
+	// colocar en movimientos
+	// {operacion:"tranferir",monto:5,persona:"pepito"}
+}
+
+dibujarHomeBanking(movimientos,dinero);
+
+</script>

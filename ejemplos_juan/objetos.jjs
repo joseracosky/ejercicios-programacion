@@ -1,0 +1,78 @@
+A = [1,2,5,6,9,7,8,5,5,5,9] // 3
+
+contador = 0;
+for(let pos in A){
+	// 0,1,2,...,11
+	if(pos%0==1)
+		contador++;
+}
+ 
+A=[0,2,3],B=[1,2,3],igual=false;
+if(A.length==B.lengt){	
+	igual = true;
+	for(let pos in A){
+		// 1,1,5,6,9,7,8,5,5,5,9
+		if(A[pos]!=B[pos]){
+			igual=false;
+			break;
+		}
+	}
+}
+
+for(let valor of A){
+	// 1,1,5,6,9,7,8,5,5,5,9
+	
+}
+
+contador = 0;
+for(let pos=0;pos<A.length;pos++){
+	// pos 0..11
+	if(A[pos]+1<=A[pos+1]){
+		contador++;
+	}
+}
+
+A = [1,2,5,6,9,7,8,5,5,5,9] // 3
+
+contador = 0;
+for(let pos=1;pos<A.length-1;pos++){
+	// pos 0..11
+	if(A[pos-1]<A[pos] && A[pos]<A[pos+1]){
+		contador++;
+	}
+}
+
+// A = [1,2,5,6,9,7,8,...]		A[2] == 5   A.nombre == 5 ???
+//		0 1 2 3 4 5 6 .....
+
+
+var objeto = {propiedad:'valor',a:1,b:2,3:3,hola:9}
+
+objeto.nombre = 'modfiicar'	
+objeto.nombre 						// se lee el valor
+objeto.nombre = 'agrego prop nombre'// agrego prop nombre
+delete objeto.nombre;				// borro prop nombre
+
+// no existe objeto.length
+
+for(let prop in objeto){}
+
+// contar cuantos elementso hay en un objeto
+
+// representar una persona con un objeto persona={....}
+
+// representar una direccion asociada a una persona persona={...direccion:{}}
+
+// pasar las propiedades de un objeto a un array
+
+// pasar los valores de un objeto a un array
+
+// representar una tabla mediante array u objetos (hacer una tabla 3x5)
+
+// [2,5,6,8,7] => {0:2,1:5,2:6,3:8,4:4}
+
+// estudia las diferencia entre ARRAY y OBJETOS
+
+// analizar https://3con14.biz/js/tips-and-tricks/17-ordenamiento-por-burbuja.html
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script type="text/javascript">
+    var array = [47, 15, 20, 5, 7, 8, 3, 4, 6, 54, 33, 29, 30, 2, 4, 5, 6, 7, 8];
+    var sumar = 0;
+    var sumar2 = 0;
+    // en este bucle se suman los valors entre 15 y 45 por un lado y los restantes se suman a parte
+    for (let valor of array) {
+        if (valor >= 15 && valor <= 45) {
+            sumar = sumar + valor;
+        } else {
+            sumar2 = sumar2 + valor;
+        }
+    }
+    alert(sumar)
+    alert(sumar2)
+
+    array2 = [];
+    // aca hacemos un array co los valore mayores a 15
+    for (let valor of array) {
+        if (valor > 15) {
+            array2.push(valor);
+        }
+    }
+    alert(array2)
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

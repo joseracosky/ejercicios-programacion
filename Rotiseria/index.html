@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rotiseria</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form_main">
+                    <h4 class="heading"><strong>Rotiseria </strong> "la mas barata" <span></span></h4>
+                    <div class="form">
+                    	<div class="row">
+                    		<div class="col-md-6">
+                            <input type="text" required="" placeholder="nombre del cliente" value="" name="name" class="txt" class="dropdown-menu" id="nombre">
+                            <input type="text" required="" placeholder="telefono" value="" name="mob" class="txt" class="dropdown-item" id="telefono">
+                            </div>
+                            <div class="col-md-6">
+                            <input type="text" required="" placeholder="direccion" value="" name="" class="txt" id="direccion">
+                            <textarea placeholder="pedido" name="mess" type="text" class="txt_3" id="comida"></textarea>
+                            </div>
+                        </div>
+                            <button onclick="guardarPedidos()" class="txt2" type="submit">guardar pedio</button>
+                            <button onclick="mostrarPedidos()" class="txt2" type="submit">mostrar pedido</button>
+                            <div id="contenedor" class="mostrar">
+                            </div>	
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+</html>

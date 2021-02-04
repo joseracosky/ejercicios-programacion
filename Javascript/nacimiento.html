@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+<script type="text/javascript">
+
+    var anio=prompt("intrduce el año en el que naciste")*1;
+
+      while(anio>2020 || anio<1900 || isNaN(anio)){
+    anio=prompt("introduce un año valido")
+ }
+    
+var mes=prompt("introduce el mes, en numeros, de tu nacimiento")*1;
+
+   while(mes>12 || mes<1 || isNaN(mes)){
+    mes=prompt("introduce un mes valido")
+ }
+
+var dia=prompt("introduce el dia de tu nacimiento en numeros")*1;
+
+ while(dia>31 || dia<1 || isNaN(dia)){
+    dia=prompt("introduce un dia valido")
+}
+
+var edad= 2020-anio;
+
+if (mes<=3 && dia<=10){
+    edad-1;
+}
+
+alert("tu tienes " + edad + " años")
+
+
+
+
+
+
+  
+
+
+   
+
+
+   
+
+  
+    
+    
+  
+
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

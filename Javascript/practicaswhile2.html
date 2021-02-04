@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var nombre, edad, nacionalidad;
+
+		nombre=prompt("escribe tu nombre");
+
+		while(!isNaN(nombre)){
+			nombre=prompt("no valen numeros");
+		}
+
+		edad=prompt("escribe tu edad");
+
+		while(edad<=0 || edad>115 || isNaN(edad)){
+			edad=prompt("introduce una ead valida")
+		}
+
+
+
+		nacionalidad=prompt("escribe tu nacionalidad");
+
+		while(!isNaN(nacionalidad)){
+			nacionalidad=prompt("no valen numeros");
+		}
+
+		
+	
+		
+
+	
+
+	
+	</script>
+
+</head>
+<body>
+	<div style="margin:auto; background-color: #FFC; width: 25%; padding: 25px;">
+		<p>
+			nombre:
+			<script type="text/javascript"> document.write(nombre); </script>
+		</p>
+		<br/>
+		<p>
+			edad:
+			<script type="text/javascript"> document.write(edad); </script>
+		</p>
+		<br/>
+		<p>
+			nacionalidad:
+			<script type="text/javascript"> document.write(nacionalidad); </script>
+
+		</p>
+	</div>
+
+</body>
+</html>

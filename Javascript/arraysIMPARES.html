@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script type="text/javascript">
+    var array = [1, 2, 5, 6, 2, 5, 6, 5, 4, 8, 6, 7];
+    var sumar = 0;
+    var impares = [];
+    var pares = [];
+    // aqui  ponemos los valores pares e impares en arrays separados 
+    // y lugo sumamos los impares
+    for (let valor of array) {
+        if (valor % 2 == 0) {
+            pares.push(valor);
+
+
+
+        } else {
+            impares.push(valor)
+        }
+
+    }
+
+    for (let valor of impares) {
+        sumar = sumar + valor;
+    }
+    alert(sumar)
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

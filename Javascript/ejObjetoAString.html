@@ -1,0 +1,52 @@
+<script type="text/javascript">
+var items = [{
+  id: 1,
+  name: 'john'
+}, {
+  id: 2,
+  name: 'jane'
+}, {
+  id: 2000,
+  name: 'zack'
+}];
+
+items.map(function(item) {
+  return '{'+item.id +'-'+ item.name +'}';
+}).toString();
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var items = [{
+  id: 1,
+  name: 'john'
+}, {
+  id: 2,
+  name: 'jane'
+}, {
+  id: 2000,
+  name: 'zack'
+}];
+
+function objectoToString(objeto){
+  debugger
+    var  str='';
+    for(p in objeto){
+        str = str + p+':'+objeto[p]+'<br>';
+    }
+    return str;
+}
+
+function arrToString(arr){
+    var str = '';
+    for(let objeto of arr){
+        str = str + objectoToString(objeto);
+    }
+    return str;
+}
+
+var str = arrToString(items);
+console.log(str);
+document.write(str);
+</script>
+
+

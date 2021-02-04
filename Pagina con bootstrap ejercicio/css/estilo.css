@@ -1,0 +1,76 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.logo {
+	width: 70px;
+}
+.redes {
+	width: 30px;
+	padding: 5px;
+	margin: 10px 8px;
+}
+.video {
+	background-image: url("../img/carousel2.jpeg");
+	padding: 200px 0;
+	position: relative;
+	text-align: center;
+}
+.video img {
+	width: 80px;
+	height: 80px;
+	position: relative;
+}
+.banner {
+	margin: -10px;
+}
+.altura-a-b {
+	padding: 100px 0;
+}
+.carousel-caption {
+    position: absolute;
+    top: 15%;
+    bottom: 20px;
+    left: 5%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: left;
+}
+.btn-light {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+/*somos*/
+.cabecera-somos {
+	padding: 150px 0 100px 0;
+	background-image: url("../img/carousel1.jpeg");
+	background-position: center center;
+	background-size: cover;
+	color: #fff
+}
+.banner-somos {
+	background-image: url("../img/carousel1.jpeg");
+	background-position: center center;
+	background-size: cover;
+	padding: 200px 0;
+	color: #fff;
+	text-align: center;
+}
+footer {
+	background-color: #000000;
+	padding: 60px 0;
+	text-align: center;
+}
+footer .logo-footer {
+	width: 200px;
+	margin-bottom: 20px;
+}
+footer p {
+	color: #fff;
+	font-size: 10px;
+}

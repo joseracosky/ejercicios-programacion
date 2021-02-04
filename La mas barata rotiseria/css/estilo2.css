@@ -1,0 +1,66 @@
+
+.cardslider {
+  
+  height: 400px;
+  
+
+}
+.menu {
+  
+  position: absolute;
+  top:35%;
+  left:52%;
+  margin-top: 100px;
+}
+.menu>img{
+  
+  height:180px;
+  width:150px;
+  position: absolute;
+  z-index:0;
+  
+  transition:all 500ms ease;
+}
+.c1{
+  transform:translateX(0) scale(1.5);
+  z-index:99;
+}
+.c2{
+  transform:translateX(-100px) scale(1);
+}
+.c3{
+  transform:translateX(100px) scale(1);
+}
+.prev,.next{
+  position: absolute;
+  text-align:center;
+  cursor:pointer;
+  background-color: transparent;
+  border: 3px solid #fdd838;
+  border-radius: 10px;
+  color: #fdd835;
+  font-size: 30px;
+  height: 50px;
+  padding-bottom: 10px;
+  
+}
+.prev{
+  
+  width: 150px;
+  margin-left:900px;
+  
+
+}
+.next{
+  
+  width: 150px;
+  margin-left: 200px;
+}
+.next:hover {
+  color: red;
+  border: 3px solid red;
+}
+.prev:hover {
+  color: red;
+  border: 3px solid red;
+}

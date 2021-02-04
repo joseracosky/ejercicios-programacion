@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	 const estudiantes = [{
+            id: '11ce',
+            nombre: 'Dall',
+            apellido: 'Puckring',
+        },
+        {
+            id: '2958',
+            nombre: 'Margarete',
+            apellido: 'Brandi',
+        },
+        {
+            id: '565a',
+            nombre: 'Bendicty',
+            apellido: 'Woodage',
+        },
+        {
+            id: '3a16',
+            nombre: 'Micki',
+            apellido: 'Mattes',
+        },
+        {
+            id: 'f396',
+            nombre: 'Flory',
+            apellido: 'Gladeche',
+        },
+        {
+            id: 'de5f',
+            nombre: 'Jamill',
+            apellido: 'Emilien',
+        },
+        {
+            id: '54cb',
+            nombre: 'Brett',
+            apellido: 'Aizikowitz',
+        },
+        {
+            id: '9135',
+            nombre: 'Lorry',
+            apellido: 'Smallman',
+        },
+        {
+            id: '978f',
+            nombre: 'Gilly',
+            apellido: 'Flott',
+        },
+    ];
+
+    const lista = document.createElement('ul');
+
+    estudiantes.forEach((estudiante)=>{
+    	const texto = `${estudiante.id} ${estudiante.nombre} ${estudiante.apellido}`;
+    	const li = document.createElement("li");
+    	li.innerText = texto;
+    	lista.appendChild(li);
+    })
+    document.body.appendChild(lista);
+</script>
+</html>

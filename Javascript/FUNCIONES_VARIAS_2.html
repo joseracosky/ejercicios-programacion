@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script type="text/javascript">
+    // en esta funcion se suman los numeros pares del valor ingresado		
+    function sum_pares() {
+        var num = prompt("numero") * 1;
+
+        var contador = 0,
+            contador2 = 0;
+
+
+        while (num > contador) {
+            contador++;
+
+            if (contador % 2 == 0) {
+                contador2 = contador2 + contador;
+
+            }
+
+        }
+        return alert("la suma de los nueros pares es " + contador2);
+    }
+    sum_pares()
+    // esta funcion suma los numeros impares de un array
+    function sum_imp(array) {
+
+        var sumar = 0;
+
+        for (let valor of array) {
+            if (valor % 2 == 1) {
+                sumar = valor + sumar;
+            }
+
+        }
+
+        return alert("la suma de los numeros impares del array es: " + sumar)
+    }
+    var array_a = [1, 2, 5, 6, 2, 5, 6, 5, 4, 8, 6, 7];
+    sum_imp(array_a);
+    // esta funcion determina si dos arrays son iguales
+    function array_iguales(array1, array2) {
+        var true_false = false;
+        if (array1.length == array2.length) {
+            for (let valor = 0; valor < array2.length; valor++) {
+                if (array1[valor] == array2[valor]) {
+                	true_false = true;
+                }
+                else{true_false = false;
+                	break}
+            }
+        }
+        return alert("son los arrays iguales?: " + true_false);
+    }
+    var array1 = [1, 2, 3, 4];
+    var array2 = [1, 2, 3, 4];
+    array_iguales(array1,array2);
+
+    // con esta funcion podemos ver los valores consecutivos y los consecutivos mayores de un array
+    function cons_may(array){
+    	var contador_a = -2;
+    	var contador_b = 0;
+    	var consec =0;
+    	var consecmayores = 0;
+    	var mayores = []
+    	for (valor of array){
+    		contador_a ++;
+    		contador_b ++;
+    		if(valor -1 == array[contador_a] || valor +1 == array[contador_b]){
+    			
+    			consec ++;
+    			mayores.push(valor);
+
+    		}
+    	}
+    	contador_a = -2;
+    	contador_b = 0;
+    	for (valor of mayores){
+    		contador_a ++;
+    		contador_b ++;
+    		if (valor -1 == mayores[contador_a] && valor +1 != mayores[contador_b]){
+    			consecmayores ++
+    		}
+    	}
+    	return alert("hay " + consec + " valores consecutivos en el array"), alert("hay " + consecmayores + " valores consecutivos mayores en el array")
+    }
+      var array_c = [50, 47, 20, 5, 7, 8, 3, 4, 6, 54, 33, 29, 30, 2, 4, 5, 6, 7, 8, ];
+      cons_may(array_c)
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

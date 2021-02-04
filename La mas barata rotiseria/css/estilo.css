@@ -1,0 +1,182 @@
+.modal {
+	z-index: 0 !important; 
+}
+.sps--abv {
+	background-color: transparent;
+	transition-property: background-color;
+	transition-duration: 1s; 
+}
+.sps--blw {
+	background-color: white;
+	transition-property: background-color;
+	transition-duration: 1s; 
+}
+.sps--abv img {
+	transition-duration: 1s;
+}
+.sps--blw img {
+	height: 30px;
+	transition-duration: 1s;
+}
+.sps--abv h2 {
+	color: white;
+	font-size: 30px;
+	transition-duration: 1s;
+}
+.sps--blw h2 {
+	color: black;
+	font-size: 25px;
+	transition-duration: 1s;
+}
+
+
+.sps--blw h4 {
+	display: none; 
+} 
+.sps--blw [class="heading"] {
+	display: none; 
+} 
+
+.logo {
+	height: 60px;
+
+}
+.redes {
+	width: 120px;
+}
+.heading {
+    border-bottom: 1px solid #fcab0e;
+    padding-bottom: 9px;
+    position: relative;
+}
+
+.heading span {
+    background: #9e6600 none repeat scroll 0 0;
+    bottom: -2px;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 75px;
+}
+.aizquierda {
+	margin-left: 300px;
+	padding-right: 0;
+}
+.agrandarh4 {
+	display: inline-block;
+
+}
+.colornav {
+	background-color: transparent;
+}
+.banner-somos {
+	background-image: url("../img/cocineros.jpeg");
+	background-position: center center;
+	background-size: cover;
+	padding: 200px 0;
+	color: #fff;
+	text-align: center;
+}
+.icono-comida {
+	height: 100px;
+	cursor: pointer;
+	padding: 20px;
+	border-radius: 20px;
+}
+.icono-comida:hover {
+	background-color: green;
+}
+.icono-comida:active {
+	background-color: red;
+}
+.amarillo {
+	background-color: #fdd835;
+}
+.verde {
+	background-color: #008945;
+}
+.amarillof {
+	color: #fdd835;
+	font-size: 20px; 
+}
+.verdef {
+	color: #008945;
+}
+.negro {
+	color: black;
+}
+.cursiva {
+	font-family: 'Pacifico', cursive;
+}
+.agrandar {
+	font-size: 20px;
+}
+.tvirtual {
+	width: 170px;
+}
+.midisplay {
+	text-shadow: 1px  0px 0px black,
+               0px  1px 0px black,
+              -1px  0px 0px black,
+               0px -1px 0px black;
+	
+}
+.stroke {
+	webkit-text-stroke
+}
+html {
+	scroll-behavior: smooth;
+}
+section {
+	border-top: 10px solid #fdd835;
+}
+footer {
+	
+	padding: 60px 0;
+	text-align: center;
+}
+
+footer img {
+	padding: 10px;
+}
+h4 {
+	font-size: 20px;
+	font-family: 'Pacifico', cursive;
+	color: #008945;	
+}
+h3 {
+	font-family: 'Pacifico', cursive;
+	color: #008945; 
+}
+h2 {
+	font-size: 30px;
+}
+label {
+	font-size: 25px;
+}
+.redes {
+	width: 70px;
+}	
+.face {
+	width: 100px;
+	margin-right: -15px
+}
+.boton {
+	background-color: transparent;
+	border: 3px solid #fdd838;
+	border-radius: 10px;
+	color: #fdd835;
+	font-size: 30px;
+	height: 50px;
+	padding-bottom: 10px; 
+
+}
+.boton:hover {
+	color: red;
+	border: 3px solid #fff;
+}
+
+#map {
+	height: 500px;
+	width: 100%;
+}

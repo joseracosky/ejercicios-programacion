@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script type="text/javascript">
+    function dia_de_hoy() {
+        var hoy = new Date();
+        document.write(hoy);
+    }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>que sera hoy?</h1>
+        <p>
+            hoy es : <script type="text/javascript">
+            dia_de_hoy()
+            </script>
+        </p>
+        <br />
+        <p>
+            entonces hoy es:<script type="text/javascript">
+            dia_de_hoy()
+            </script>
+        </p>
+    </div>
+
+<script type="text/javascript">
+	
+function escribe_nombre(nombre){
+	document.write(nombre);
+}
+var el_nombre=prompt("escribe tu nombre")
+
+</script>
+
+
+    <div>
+    	<p style="font-size: 25px font-weight:bold">
+    		hola <script type="text/javascript">escribe_nombre(el_nombre) </script>, bienvenide a mi pagina web
+    	</p>
+    </div>
+</body>
+
+</html>
